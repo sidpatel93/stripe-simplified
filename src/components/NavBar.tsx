@@ -3,6 +3,7 @@ import {
   SignedOut,
   SignInButton,
   SignOutButton,
+  SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
 import {
@@ -72,6 +73,12 @@ function NavBar() {
             </Button>
           </SignInButton>
         </SignedOut>
+
+        <SignedOut>
+					<SignUpButton mode='modal'>
+						<Button size={"sm"}>Sign Up</Button>
+					</SignUpButton>
+				</SignedOut>
       </div>
     </nav>
   );
